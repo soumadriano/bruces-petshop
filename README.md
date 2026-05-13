@@ -49,4 +49,4 @@ Landing page completa para um Pet Shop, desenvolvida em HTML, CSS e JavaScript p
 
 ---
 
-**Desenvolvido para o desafio extra do curso SENAI/SCTEC**# bruces-petshop
+**Desenvolvido para o desafio extra do curso SENAI/SCTEC** #bruces-petshop
