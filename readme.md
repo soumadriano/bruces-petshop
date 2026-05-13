@@ -1,10 +1,10 @@
-# 🐾 PetCarinho - Pet Shop
+# 🐾 Bruce's Petshop - Pet Shop
 
 ## 📋 Identificação
 
 | Item | Descrição |
 |------|-----------|
-| **Projeto** | PetCarinho - Landing Page para Pet Shop |
+| **Projeto** | Bruce's Petshop - Landing Page para Pet Shop |
 | **Autor** | Adriano da Conceição Santos |
 | **Curso** | Introdução à Programação Front-End e Back-End - SENAI/SCTEC |
 
@@ -49,4 +49,4 @@ Landing page completa para um Pet Shop, desenvolvida em HTML, CSS e JavaScript p
 
 ---
 
-**Desenvolvido para o desafio extra do curso SENAI/SCTEC**# bruces-petshop
+**Desenvolvido para o desafio extra do curso SENAI/SCTEC** #bruces-petshop
