@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce's Petshop - Seu pet merece amor e cuidado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>🐾 Bruce's Petshop</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#agendamentos">Agendamentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO 1: DESTAQUE com POSITION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Seu pet merece <span>amor e cuidado</span></h1>
+            <p>Há mais de 10 anos oferecendo o melhor para seu melhor amigo. Agende agora e ganhe 10% de desconto!</p>
+            <div class="hero-buttons">
+                <a href="#agendamentos" class="btn-primary">Agendar Agora</a>
+                <a href="#servicos" class="btn-secondary">Ver Serviços</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500" alt="Cachorro feliz">
+                <div class="floating-badge">
+                    <i class="fas fa-heart"></i> +5.000 pets felizes
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: SOBRE com FLEXBOX/GRID -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Nós</span></h2>
+            <div class="sobre-grid">
+                <div class="sobre-texto">
+                    <h3>Uma história de amor pelos animais</h3>
+                    <p>Há mais de 10 anos, o Bruce's Petshop nasceu do sonho de oferecer cuidados excepcionais para pets. Começamos pequenos e hoje somos referência em bem-estar animal na região.</p>
+                    <p>Nossa missão é proporcionar saúde, alegria e qualidade de vida para seu pet, com profissionais apaixonados e estrutura de primeira.</p>
+                    <div class="indicadores">
+                        <div class="indicador">
+                            <span class="numero" data-target="10580">0</span>
+                            <span class="label">Pets atendidos</span>
+                        </div>
+                        <div class="indicador">
+                            <span class="numero" data-target="10">0</span>
+                            <span class="label">Anos de experiência</span>
+                        </div>
+                        <div class="indicador">
+                            <span class="numero" data-target="98">0</span>
+                            <span class="label">% de satisfação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500" alt="Equipe Bruce's Petshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: SERVIÇOS com CARDS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos <span>Serviços</span></h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Banho</h3>
+                    <p>Banho completo com produtos específicos.</p>
+                    <span class="preco">R$ 50</span>
+                    <a href="#agendamentos" class="btn-card">Agendar</a>
+                </div>
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Tosa</h3>
+                    <p>Tosa higiênica ou estilo raça.</p>
+                    <span class="preco">R$ 45</span>
+                    <a href="#agendamentos" class="btn-card">Agendar</a>
+                </div>
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consulta Veterinária</h3>
+                    <p>Atendimento com especialistas.</p>
+                    <span class="preco">R$ 120</span>
+                    <a href="#agendamentos" class="btn-card">Agendar</a>
+                </div>
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Hospedagem</h3>
+                    <p>Hotel para pets 24h.</p>
+                    <span class="preco">R$ 80/dia</span>
+                    <a href="#agendamentos" class="btn-card">Agendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: AGENDAMENTOS + KANBAN -->
+    <section id="agendamentos" class="agendamentos">
+        <div class="container">
+            <h2 class="section-title">Sistema de <span>Agendamentos</span></h2>
+            
+            <!-- Formulário de agendamento -->
+            <div class="form-agendamento">
+                <h3>📅 Novo Agendamento</h3>
+                <form id="formAgendamento">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Seu nome *</label>
+                            <input type="text" id="cliente_nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail *</label>
+                            <input type="email" id="cliente_email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="tel" id="cliente_telefone">
+                        </div>
+                        <div class="form-group">
+                            <label>Nome do Pet *</label>
+                            <input type="text" id="pet_nome" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Serviço *</label>
+                            <select id="servico" required>
+                                <option value="">Selecione...</option>
+                                <option value="Banho">Banho - R$ 50</option>
+                                <option value="Tosa">Tosa - R$ 45</option>
+                                <option value="Consulta Veterinária">Consulta - R$ 120</option>
+                                <option value="Hospedagem">Hospedagem - R$ 80/dia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Data e Horário *</label>
+                            <input type="datetime-local" id="data_agendamento" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Observações</label>
+                        <textarea id="observacoes" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">✅ Agendar Agora</button>
+                </form>
+            </div>
+
+            <!-- Kanban Board -->
+            <div class="kanban-board">
+                <h3>📋 Agenda de Serviços</h3>
+                <div class="kanban-columns">
+                    <div class="kanban-column" data-status="pendente">
+                        <div class="column-header">
+                            <h4>📝 Pendentes</h4>
+                            <span class="count" id="count-pendente">0</span>
+                        </div>
+                        <div class="column-cards" id="coluna-pendente"></div>
+                    </div>
+                    <div class="kanban-column" data-status="em_andamento">
+                        <div class="column-header">
+                            <h4>✂️ Em Andamento</h4>
+                            <span class="count" id="count-andamento">0</span>
+                        </div>
+                        <div class="column-cards" id="coluna-andamento"></div>
+                    </div>
+                    <div class="kanban-column" data-status="concluido">
+                        <div class="column-header">
+                            <h4>✅ Concluídos</h4>
+                            <span class="count" id="count-concluido">0</span>
+                        </div>
+                        <div class="column-cards" id="coluna-concluido"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: CONTATO com validação -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Fale <span>Conosco</span></h2>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rua dos Pets, 123 - Centro, Lages/SC</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(49) 99936-3673</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>adrianocsantos@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Seg-Sex: 8h às 19h | Sáb: 9h às 16h</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <form id="formContato">
+                        <div class="form-group">
+                            <label>Nome *</label>
+                            <input type="text" id="contato_nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail *</label>
+                            <input type="email" id="contato_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="tel" id="contato_telefone">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem *</label>
+                            <textarea id="contato_mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>🐾 Bruce's Petshop</h3>
+                    <p>Amor e cuidado para seu melhor amigo</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#agendamentos">Agendamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Receba novidades e promoções</p>
+                    <form id="formNewsletter">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit">📧</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bruce Petshop - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
